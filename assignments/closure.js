@@ -1,6 +1,21 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+// Why was 6 afraid of 7? Because 7 8 9!
+
+const joke = [];
+
+function dadJoke() {
+  joke.push("Why was 6 afraid of 7?");
+
+  let setup = [6, 7, 8]
+  const punchline = setup.map(x => x + 1);
+  joke.push("Because", punchline);
+};
+
+dadJoke()
+console.log(joke);
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
